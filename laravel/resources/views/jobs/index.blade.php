@@ -1,5 +1,7 @@
 <x-layout>
-    <h1>Hello jobs page</h1>
+    <div>
+        <a class="text-red-700" href="/jobs/create">Create job</a>
+    </div>
     <ul>
         @foreach ($jobs as $job)
             <li>
