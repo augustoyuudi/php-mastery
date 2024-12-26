@@ -1,9 +1,13 @@
 <x-layout>
     <div>
-        {{ $job['id'] }}
+        {{ $job->id }}
     
-        {{ $job['title'] }}
+        {{ $job->title }}
     
-        {{ $job['salary'] }}
+        {{ $job->salary }}
+    </div>
+
+    <div>
+        <a href="/jobs/{{ $job->id }}/edit">Edit job</a>
     </div>
 </x-layout>
